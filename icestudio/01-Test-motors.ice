@@ -12,45 +12,6 @@
     "graph": {
       "blocks": [
         {
-          "id": "8a86181e-19c1-4073-b7b1-822f879d4799",
-          "type": "basic.input",
-          "data": {
-            "name": "IR",
-            "pins": [
-              {
-                "index": "0",
-                "name": "D11",
-                "value": "142"
-              }
-            ],
-            "virtual": false,
-            "clock": false
-          },
-          "position": {
-            "x": -336,
-            "y": -160
-          }
-        },
-        {
-          "id": "bfc5477f-7f1e-4f06-a246-7ff4cc5fecf5",
-          "type": "basic.output",
-          "data": {
-            "name": "LED",
-            "pins": [
-              {
-                "index": "0",
-                "name": "LED7",
-                "value": "104"
-              }
-            ],
-            "virtual": false
-          },
-          "position": {
-            "x": -112,
-            "y": -160
-          }
-        },
-        {
           "id": "ab971472-40fa-4bc8-b3f2-3f0b05154dfd",
           "type": "basic.output",
           "data": {
@@ -67,45 +28,6 @@
           "position": {
             "x": 544,
             "y": -144
-          }
-        },
-        {
-          "id": "2edd169c-2e7f-43f6-a7eb-71b93ad44514",
-          "type": "basic.input",
-          "data": {
-            "name": "IR",
-            "pins": [
-              {
-                "index": "0",
-                "name": "D10",
-                "value": "141"
-              }
-            ],
-            "virtual": false,
-            "clock": false
-          },
-          "position": {
-            "x": -336,
-            "y": -88
-          }
-        },
-        {
-          "id": "a9aeb75d-75a2-4ba7-8b56-03a8e9881779",
-          "type": "basic.output",
-          "data": {
-            "name": "LED",
-            "pins": [
-              {
-                "index": "0",
-                "name": "LED6",
-                "value": "102"
-              }
-            ],
-            "virtual": false
-          },
-          "position": {
-            "x": -112,
-            "y": -88
           }
         },
         {
@@ -268,22 +190,6 @@
           }
         },
         {
-          "id": "140cb63f-7166-4412-9325-9432796f9479",
-          "type": "basic.info",
-          "data": {
-            "info": "IR sensor Test",
-            "readonly": true
-          },
-          "position": {
-            "x": -328,
-            "y": -224
-          },
-          "size": {
-            "width": 144,
-            "height": 48
-          }
-        },
-        {
           "id": "0fb1e6e3-4660-43da-81fc-68d92c5afb15",
           "type": "basic.info",
           "data": {
@@ -380,36 +286,15 @@
             "block": "f230ec28-e609-4f35-8185-f9ec1681cb19",
             "port": "in"
           }
-        },
-        {
-          "source": {
-            "block": "8a86181e-19c1-4073-b7b1-822f879d4799",
-            "port": "out"
-          },
-          "target": {
-            "block": "bfc5477f-7f1e-4f06-a246-7ff4cc5fecf5",
-            "port": "in"
-          }
-        },
-        {
-          "source": {
-            "block": "2edd169c-2e7f-43f6-a7eb-71b93ad44514",
-            "port": "out"
-          },
-          "target": {
-            "block": "a9aeb75d-75a2-4ba7-8b56-03a8e9881779",
-            "port": "in"
-          },
-          "vertices": []
         }
       ]
     },
     "state": {
       "pan": {
-        "x": 405,
-        "y": 261.5
+        "x": 157.625,
+        "y": 195
       },
-      "zoom": 1
+      "zoom": 0.6652
     }
   },
   "dependencies": {
