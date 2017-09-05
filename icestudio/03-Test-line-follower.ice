@@ -12,10 +12,29 @@
     "graph": {
       "blocks": [
         {
+          "id": "c285daf8-e457-43c1-911b-e8ed61a4fe51",
+          "type": "basic.output",
+          "data": {
+            "name": "Motor_DIR",
+            "pins": [
+              {
+                "index": "0",
+                "name": "D3",
+                "value": "116"
+              }
+            ],
+            "virtual": false
+          },
+          "position": {
+            "x": 624,
+            "y": 32
+          }
+        },
+        {
           "id": "bc6bf026-2e6b-44e0-84f3-632fa99a329c",
           "type": "basic.output",
           "data": {
-            "name": "LED",
+            "name": "DEBUG",
             "pins": [
               {
                 "index": "0",
@@ -26,8 +45,27 @@
             "virtual": false
           },
           "position": {
-            "x": 296,
-            "y": -80
+            "x": 88,
+            "y": 48
+          }
+        },
+        {
+          "id": "f230ec28-e609-4f35-8185-f9ec1681cb19",
+          "type": "basic.output",
+          "data": {
+            "name": "Motor_DIR",
+            "pins": [
+              {
+                "index": "0",
+                "name": "D1",
+                "value": "118"
+              }
+            ],
+            "virtual": false
+          },
+          "position": {
+            "x": 624,
+            "y": 104
           }
         },
         {
@@ -45,8 +83,8 @@
             "virtual": false
           },
           "position": {
-            "x": 376,
-            "y": 0
+            "x": 168,
+            "y": 128
           }
         },
         {
@@ -65,15 +103,15 @@
             "clock": false
           },
           "position": {
-            "x": -40,
-            "y": 0
+            "x": -248,
+            "y": 128
           }
         },
         {
           "id": "a9aeb75d-75a2-4ba7-8b56-03a8e9881779",
           "type": "basic.output",
           "data": {
-            "name": "LED",
+            "name": "DEBUG",
             "pins": [
               {
                 "index": "0",
@@ -84,8 +122,8 @@
             "virtual": false
           },
           "position": {
-            "x": 296,
-            "y": 96
+            "x": 88,
+            "y": 224
           }
         },
         {
@@ -103,8 +141,8 @@
             "virtual": false
           },
           "position": {
-            "x": 376,
-            "y": 184
+            "x": 168,
+            "y": 312
           }
         },
         {
@@ -123,54 +161,16 @@
             "clock": false
           },
           "position": {
-            "x": -40,
-            "y": 184
-          }
-        },
-        {
-          "id": "c285daf8-e457-43c1-911b-e8ed61a4fe51",
-          "type": "basic.output",
-          "data": {
-            "name": "Motor_DIR",
-            "pins": [
-              {
-                "index": "0",
-                "name": "D3",
-                "value": "116"
-              }
-            ],
-            "virtual": false
-          },
-          "position": {
-            "x": 264,
-            "y": 336
-          }
-        },
-        {
-          "id": "f230ec28-e609-4f35-8185-f9ec1681cb19",
-          "type": "basic.output",
-          "data": {
-            "name": "Motor_DIR",
-            "pins": [
-              {
-                "index": "0",
-                "name": "D1",
-                "value": "118"
-              }
-            ],
-            "virtual": false
-          },
-          "position": {
-            "x": 264,
-            "y": 408
+            "x": -248,
+            "y": 312
           }
         },
         {
           "id": "6be62742-3576-4404-b6a0-ee7dfed9a40e",
           "type": "725b7e2cb9666b5ed3183537d9c898f096dab82a",
           "position": {
-            "x": -16,
-            "y": 336
+            "x": 344,
+            "y": 32
           },
           "size": {
             "width": 96,
@@ -181,8 +181,8 @@
           "id": "4d901a1a-a5ab-4588-8f07-ba3c23040193",
           "type": "0ec0772bb73356cd1b754fe7d840a322387a9f3a",
           "position": {
-            "x": 136,
-            "y": 0
+            "x": -72,
+            "y": 128
           },
           "size": {
             "width": 96,
@@ -193,12 +193,44 @@
           "id": "a4c9e369-fb09-4620-a682-43a91d094e81",
           "type": "0ec0772bb73356cd1b754fe7d840a322387a9f3a",
           "position": {
-            "x": 120,
-            "y": 184
+            "x": -88,
+            "y": 312
           },
           "size": {
             "width": 96,
             "height": 64
+          }
+        },
+        {
+          "id": "e3e439ff-3771-4a00-990d-044b17fba300",
+          "type": "basic.info",
+          "data": {
+            "info": "The two motors are always set to move\nforward (the robot moves always forward)",
+            "readonly": true
+          },
+          "position": {
+            "x": 368,
+            "y": -32
+          },
+          "size": {
+            "width": 320,
+            "height": 48
+          }
+        },
+        {
+          "id": "167ca210-e405-4ecc-938d-fecf3da2cb75",
+          "type": "basic.info",
+          "data": {
+            "info": "Motors are enabled (and moving at max speed)\naccording to the IR sensors readings",
+            "readonly": true
+          },
+          "position": {
+            "x": -224,
+            "y": -32
+          },
+          "size": {
+            "width": 352,
+            "height": 48
           }
         }
       ],
@@ -224,8 +256,8 @@
           },
           "vertices": [
             {
-              "x": 184,
-              "y": 392
+              "x": 544,
+              "y": 88
             }
           ]
         },
@@ -293,10 +325,10 @@
     },
     "state": {
       "pan": {
-        "x": 191.5,
-        "y": 277.5
+        "x": 275.087,
+        "y": 104.7826
       },
-      "zoom": 1
+      "zoom": 0.8098
     }
   },
   "dependencies": {
