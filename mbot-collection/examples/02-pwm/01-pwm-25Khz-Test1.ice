@@ -43,7 +43,7 @@
           },
           "position": {
             "x": 8,
-            "y": -280
+            "y": -352
           }
         },
         {
@@ -69,7 +69,7 @@
           "id": "bd3ea530-833e-40d1-9a58-fdfc5d327973",
           "type": "basic.input",
           "data": {
-            "name": "boton",
+            "name": "Button",
             "pins": [
               {
                 "index": "0",
@@ -127,7 +127,7 @@
           "id": "928b091d-bf38-4588-995e-ddfdedc18d7a",
           "type": "basic.input",
           "data": {
-            "name": "boton",
+            "name": "Button",
             "pins": [
               {
                 "index": "0",
@@ -213,6 +213,150 @@
           "size": {
             "width": 96,
             "height": 96
+          }
+        },
+        {
+          "id": "a6c9face-83a1-4bfe-bf2c-83e00a078b43",
+          "type": "basic.info",
+          "data": {
+            "info": "<h3>PWM Test 1</h3>",
+            "readonly": true
+          },
+          "position": {
+            "x": -664,
+            "y": -536
+          },
+          "size": {
+            "width": 192,
+            "height": 48
+          }
+        },
+        {
+          "id": "38598e22-c23f-4884-91d7-e75bdd717ab3",
+          "type": "basic.info",
+          "data": {
+            "info": "Testing the PWM unit for controlling the motor's speed\nOnly 11 speeds can be set, from 0 to 10\nVelocity = 0 means the motor is fully stopped\nVelocity = 10 means the motor is at full speed (no pwm)",
+            "readonly": true
+          },
+          "position": {
+            "x": -664,
+            "y": -464
+          },
+          "size": {
+            "width": 448,
+            "height": 96
+          }
+        },
+        {
+          "id": "29925493-4c34-4e56-8295-52519b1a7dea",
+          "type": "basic.info",
+          "data": {
+            "info": "Initially the motor is disabled. First use the <b>SW2 button</b>\nfor enabling the motor (The LED7 will be turn on). Then use\n<b>SW1</b> for increasing the speed. It starts from 0.\nEvery time you click on the button, the velocity is increased\nby one unit (and the current value (4-bits) is shown in the leds)\n\nIf the SW1 button is clicked when the speed is 10, it\nwill start from 0",
+            "readonly": true
+          },
+          "position": {
+            "x": -672,
+            "y": -376
+          },
+          "size": {
+            "width": 528,
+            "height": 160
+          }
+        },
+        {
+          "id": "6435b85c-195e-4ff4-aea0-a786dbce1b3a",
+          "type": "basic.info",
+          "data": {
+            "info": "<b>Module 11 counter</b>. Every time the\nbutton is pressed, the counter is\nincreased in one unit",
+            "readonly": true
+          },
+          "position": {
+            "x": -448,
+            "y": -152
+          },
+          "size": {
+            "width": 336,
+            "height": 80
+          }
+        },
+        {
+          "id": "588d2813-aead-4b9a-a4fd-7936af39a621",
+          "type": "basic.info",
+          "data": {
+            "info": "Display the <b>current velocity</b>\nin the leds (in binary)",
+            "readonly": true
+          },
+          "position": {
+            "x": -80,
+            "y": -408
+          },
+          "size": {
+            "width": 304,
+            "height": 48
+          }
+        },
+        {
+          "id": "c5ec96a3-37cf-4604-bd25-47e8a2503ec6",
+          "type": "basic.info",
+          "data": {
+            "info": "<b>PWM unit</b>",
+            "readonly": true
+          },
+          "position": {
+            "x": 0,
+            "y": -120
+          },
+          "size": {
+            "width": 160,
+            "height": 32
+          }
+        },
+        {
+          "id": "f82d2678-3f5f-4676-b9f1-eb3da1fe1236",
+          "type": "basic.info",
+          "data": {
+            "info": "The motor is set to move forward",
+            "readonly": true
+          },
+          "position": {
+            "x": 272,
+            "y": 144
+          },
+          "size": {
+            "width": 288,
+            "height": 32
+          }
+        },
+        {
+          "id": "c99c505e-bb5a-45c8-8dcf-837200269071",
+          "type": "basic.info",
+          "data": {
+            "info": "Button SW2 Enables/disables the motor",
+            "readonly": true
+          },
+          "position": {
+            "x": -192,
+            "y": 296
+          },
+          "size": {
+            "width": 320,
+            "height": 32
+          }
+        },
+        {
+          "id": "3031aac7-d5b4-4723-a997-3778fcee88cb",
+          "type": "basic.info",
+          "data": {
+            "info": "<h3>Results</h3>\n\nThe results show that from velocities 1 to 6\nthe motor cannot start by itself (an external torque\nshould be applied (by hand for example))\n\nFrom 7 to 10 the motor moves with increased speed\n\nEven though there are 11 possible velocities, <b>only\nfrom 7 to 10 are usefull</b>",
+            "readonly": true
+          },
+          "position": {
+            "x": 216,
+            "y": -528
+          },
+          "size": {
+            "width": 432,
+            "height": 192
           }
         }
       ],
@@ -330,10 +474,10 @@
     },
     "state": {
       "pan": {
-        "x": 562.8613,
-        "y": 355.5318
+        "x": 867.307,
+        "y": 576.2116
       },
-      "zoom": 0.7018
+      "zoom": 1
     }
   },
   "dependencies": {
