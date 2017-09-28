@@ -90,19 +90,51 @@
           }
         },
         {
-          "id": "140cb63f-7166-4412-9325-9432796f9479",
+          "id": "5bf1949b-e129-4e7b-95f5-679b48445893",
           "type": "basic.info",
           "data": {
-            "info": "IR sensor Test",
+            "info": "<h3>IR sensor Test</h3>",
             "readonly": true
           },
           "position": {
-            "x": 8,
-            "y": -32
+            "x": 0,
+            "y": -152
           },
           "size": {
-            "width": 144,
+            "width": 240,
             "height": 48
+          }
+        },
+        {
+          "id": "025bfcc6-c447-4cf2-a1b5-2c8986b7f5b6",
+          "type": "basic.info",
+          "data": {
+            "info": "The mbot IR Sensors are digital (5v)\nThis circuit shows then on the\nicezum LEDs, for checking that they\nare working correctly",
+            "readonly": true
+          },
+          "position": {
+            "x": -8,
+            "y": -80
+          },
+          "size": {
+            "width": 336,
+            "height": 96
+          }
+        },
+        {
+          "id": "1ae2b039-9746-4ee2-b36c-49aa3e5cad07",
+          "type": "basic.info",
+          "data": {
+            "info": "When the IR sensor detects the white color,\nthe led will be turn on\n\nWhen the IR sensor detects blacks (or it is\npointing to the infinitum) the led is \nturn off",
+            "readonly": true
+          },
+          "position": {
+            "x": 344,
+            "y": 40
+          },
+          "size": {
+            "width": 384,
+            "height": 112
           }
         }
       ],
@@ -132,10 +164,10 @@
     },
     "state": {
       "pan": {
-        "x": 265.4902,
-        "y": 116.912
+        "x": 70,
+        "y": 174.5
       },
-      "zoom": 1.0312
+      "zoom": 1
     }
   },
   "dependencies": {}
