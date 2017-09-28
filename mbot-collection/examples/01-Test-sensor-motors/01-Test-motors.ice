@@ -26,8 +26,8 @@
             "virtual": false
           },
           "position": {
-            "x": 544,
-            "y": -144
+            "x": 384,
+            "y": -128
           }
         },
         {
@@ -45,8 +45,8 @@
             "virtual": false
           },
           "position": {
-            "x": 592,
-            "y": -24
+            "x": 472,
+            "y": -48
           }
         },
         {
@@ -57,16 +57,16 @@
             "pins": [
               {
                 "index": "0",
-                "name": "D13",
-                "value": "144"
+                "name": "SW1",
+                "value": "10"
               }
             ],
             "virtual": false,
             "clock": false
           },
           "position": {
-            "x": 176,
-            "y": -8
+            "x": 56,
+            "y": -32
           }
         },
         {
@@ -84,8 +84,8 @@
             "virtual": false
           },
           "position": {
-            "x": 592,
-            "y": 48
+            "x": 472,
+            "y": 24
           }
         },
         {
@@ -103,8 +103,8 @@
             "virtual": false
           },
           "position": {
-            "x": 576,
-            "y": 192
+            "x": 408,
+            "y": 144
           }
         },
         {
@@ -122,8 +122,8 @@
             "virtual": false
           },
           "position": {
-            "x": 632,
-            "y": 296
+            "x": 504,
+            "y": 216
           }
         },
         {
@@ -134,16 +134,16 @@
             "pins": [
               {
                 "index": "0",
-                "name": "D12",
-                "value": "143"
+                "name": "SW2",
+                "value": "11"
               }
             ],
             "virtual": false,
             "clock": false
           },
           "position": {
-            "x": 192,
-            "y": 312
+            "x": 64,
+            "y": 232
           }
         },
         {
@@ -161,16 +161,16 @@
             "virtual": false
           },
           "position": {
-            "x": 624,
-            "y": 384
+            "x": 496,
+            "y": 304
           }
         },
         {
           "id": "b225d07c-1aa7-4dcb-ba39-dd6633c065f1",
           "type": "a627f5aacef2457b46054b0e895bd70d62c19a0c",
           "position": {
-            "x": 376,
-            "y": 296
+            "x": 248,
+            "y": 216
           },
           "size": {
             "width": 96,
@@ -181,8 +181,8 @@
           "id": "eeccbbd2-c501-499d-bc75-d416d0a7f3ef",
           "type": "a627f5aacef2457b46054b0e895bd70d62c19a0c",
           "position": {
-            "x": 344,
-            "y": -24
+            "x": 224,
+            "y": -48
           },
           "size": {
             "width": 96,
@@ -193,16 +193,80 @@
           "id": "0fb1e6e3-4660-43da-81fc-68d92c5afb15",
           "type": "basic.info",
           "data": {
-            "info": "Motor test",
+            "info": "<b>SW1 button</b> turns both motors ON/OFF\n\n<b>SW2 boton</b> change the motor direction: clockwise, or anticlockwise\n\nFor testing the motors, firt press SW1 once, and the motor should start moving\nEvery time the SW2 button is pressed, the direction is changed",
             "readonly": true
           },
           "position": {
-            "x": 304,
-            "y": -216
+            "x": 24,
+            "y": -328
           },
           "size": {
-            "width": 144,
+            "width": 752,
+            "height": 144
+          }
+        },
+        {
+          "id": "0102c094-3aaf-4e72-b183-58a27b9de78f",
+          "type": "basic.info",
+          "data": {
+            "info": "<H3>Motors Test</H3>",
+            "readonly": true
+          },
+          "position": {
+            "x": 24,
+            "y": -408
+          },
+          "size": {
+            "width": 208,
+            "height": 64
+          }
+        },
+        {
+          "id": "8666f9d0-60f7-41e2-8d8a-4f3c07561cc9",
+          "type": "basic.info",
+          "data": {
+            "info": "Circuit for turning the two motors ON/OFF",
+            "readonly": true
+          },
+          "position": {
+            "x": 48,
+            "y": 48
+          },
+          "size": {
+            "width": 352,
             "height": 48
+          }
+        },
+        {
+          "id": "23cef8b6-fc71-4ffa-b2d3-50cc1810afd4",
+          "type": "basic.info",
+          "data": {
+            "info": "Circuit for turning the motor direction:\nbackward or forward",
+            "readonly": true
+          },
+          "position": {
+            "x": 72,
+            "y": 320
+          },
+          "size": {
+            "width": 352,
+            "height": 48
+          }
+        },
+        {
+          "id": "00024010-80c2-4b9b-a88e-8442c9df442b",
+          "type": "basic.info",
+          "data": {
+            "info": "The hardware driver for the motors is the <b>L293 chip</b>\nEach motor has only two digital inputs:\n  \n  * One for turning the motor on/of\n  * One for the direction",
+            "readonly": true
+          },
+          "position": {
+            "x": 672,
+            "y": 64
+          },
+          "size": {
+            "width": 512,
+            "height": 128
           }
         }
       ],
@@ -291,10 +355,10 @@
     },
     "state": {
       "pan": {
-        "x": 157.625,
-        "y": 195
+        "x": 62.5514,
+        "y": 327.7503
       },
-      "zoom": 0.6652
+      "zoom": 0.7895
     }
   },
   "dependencies": {
